@@ -1,9 +1,10 @@
 <configuration>
-    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+    <appender name="file" class="ch.qos.logback.core.FileAppender">
+        <file>/home/ubuntu/Salary-API/salary.log</file>
         <encoder class="net.logstash.logback.encoder.LogstashEncoder" />
     </appender>
 
     <root level="INFO">
-        <appender-ref ref="console" />
+        <appender-ref ref="file" />
     </root>
 </configuration>
